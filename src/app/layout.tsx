@@ -26,17 +26,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable}
-        antialiased min-h-screen flex flex-col <!-- 세로 방향으로 배치 -->
+        className={`${geistSans.variable} ${geistMono.variable} 
+        antialiased min-h-screen flex flex-col 
         `}
       >
         <header>
           <nav className="flex gap-4">
             <Link href="/">메인</Link>
-            <Link href="/list">목록</Link>
+            <Link href="/posts">목록</Link>
           </nav>
         </header>
-        <main className="flex-grow flex justify-center items-center">
+        <main className="flex-grow flex flex-col gap-4 justify-center items-center">
           {children}
         </main>
         <footer>푸터</footer>
